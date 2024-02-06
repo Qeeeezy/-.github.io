@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7f22e679-047f-434d-8c46-082250db752e&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Памятник белорусскому <br> деятелю <br> Мелетию Смотрицкому</h1>
+    </header>
+    <main>
+       <!-- <section class="img_section">
+            <div>
+                <img class="main_img" src="https://ds127-kursk-r38.gosweb.gosuslugi.ru/netcat_files/21/10/1677862132_topdevka_com_p_erotika_anastasiya_karpenko_golaya_34.jpg" alt="">
+            </div>
+        </section> -->
+        <section>
+            <section>
+                <div id="map" class="map""></div>
+                <h2>Почему мы выбрали именно это место?</h2>
+
+                <div class="post-wrap">
+                <div class="post-item">
+                <div class="post-item-wrap">
+                <a href="" class="post-link">
+                <h3 class="post-title">Символика образования и знания</h3>
+                <p class="post-content">Национальная библиотека представляет собой центр знаний и образования в стране. Мелетий Смотрицкий, будучи выдающимся ученым и писателем, отдаленно напоминает о важности образования и культуры в белорусском обществе. Размещение его памятника рядом с библиотекой подчеркнет эту связь.</p>
+                </a>
+                </div>
+                </div>
+
+                <div class="post-wrap">
+                <div class="post-item">
+                <div class="post-item-wrap">
+                <a href="" class="post-link">
+                <h3 class="post-title">Историческая роль</h3>
+                <p class="post-content">Мелетий Смотрицкий был известен своими трудами в области литературы и религиозной мысли, которые оказали значительное влияние на белорусскую культуру и язык. Установка его памятника возле Национальной библиотеки, где хранится множество его произведений и их исследований, подчеркнет его историческую роль и вклад в культурное наследие Беларуси.</p>
+                </a>
+                </div>
+                </div>
+
+                <div class="post-wrap">
+                <div class="post-item">
+                <div class="post-item-wrap">
+                <a href="" class="post-link">
+                <h3 class="post-title">Доступность и посещаемость</h3>
+                <p class="post-content">Место возле Национальной библиотеки обладает высокой посещаемостью и доступностью для местных жителей и туристов. Это обеспечит широкую аудиторию, которая сможет увидеть и почитать памятник, что будет способствовать сохранению памяти о Мелетии Смотрицком и его наследии.</p>
+                </a>
+                </div>
+                </div>
+                
+                <div class="post-item">
+                <div class="post-item-wrap">
+                <a href="" class="post-link">
+                <h3 class="post-title">Географическое центральное расположение</h3>
+                <p class="post-content">Минск является столицей Беларуси и имеет центральное географическое расположение. Установка памятника в столице обеспечит максимальную видимость и значимость данного памятника как символа белорусской культуры и наследия.</p>
+                </a>
+                </div>
+                </div>
+                
+              </section>
+            
+        </section>
+    </main>
+
+    <script>
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [53.931064214027906, 27.64529420786517], // Координаты центра карты
+                zoom: 15 // Уровень масштабирования
+            });
+
+            // Создание маркера
+            var myPlacemark = new ymaps.Placemark([53.931064214027906, 27.64529420786517], { 
+                hintContent: 'Памятник', 
+                balloonContent: 'Мелетий Смотрицкий' 
+            });
+
+            // Добавление маркера на карту
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+</body>
+</html>
